@@ -1,0 +1,26 @@
+.search-form {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: grey;
+
+
+}
+
+.search-input {
+    padding: 1rem 2rem;
+    font-family: cursive;
+    border: none;
+}
+
+.search-btn {
+    padding: 1rem 2rem;
+    background-color: tomato;
+    border: none;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: rgb(255, 76, 44);
+}

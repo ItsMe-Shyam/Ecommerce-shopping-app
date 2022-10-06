@@ -1,0 +1,162 @@
+.all-products-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    padding: 0 10rem;
+    height: 100vh;
+}
+
+  
+ .all-products {
+    text-align: center;
+    margin: 2rem auto;
+    border-bottom: 2px solid black;
+    width: 22rem;
+    font-size: 3rem;
+    padding: 0 3rem;
+    background: linear-gradient(to right, rgba(192, 28, 28, 0.353), rgb(192, 28, 28));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 1rem "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+
+.filter-box {
+  width: 16rem;
+  position: absolute;
+  padding: 0 1rem;
+  top: 10rem;
+  left: 3rem;
+  transition: all .2s ease;
+  overflow: hidden;
+
+}
+.filterBoxContainer {
+  margin-bottom: 4rem;
+}
+.filterBoxToggler {
+  display: block;
+  opacity: 0;
+  background-color: white;
+  padding: 1rem 0;
+  width: 50%;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid grey;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+
+@media(max-width: 700px) {
+  .filter-box {
+    position: static;
+    margin: 0 auto;
+    height: 0;
+    opacity: 0;
+
+  }
+  .filterBoxToggler {
+    opacity: 1;
+  }
+  .showFilters {
+    height: 32rem;
+    opacity: 1;
+  }
+}
+
+
+.filter-heading {
+  font-size: 2rem;
+  margin: .5rem 0;
+  display: inline-block;
+}
+
+.category-ul {
+  list-style: none;
+
+}
+.category-item {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: black;
+}
+.category-item:active, .category-item:hover {
+  color: tomato;
+}
+
+.rating-heading-container {
+  border: 2px solid rgba(0, 0, 0, 0.342);
+  z-index: 10;
+  position: relative;
+  height: 4rem;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  
+}
+
+.rating-heading {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 0 .5rem;
+  position: absolute;
+  z-index: 200;
+  top: -1rem;
+  left: .5rem;
+}
+
+.slider-container {
+  margin-top: .5rem;
+}

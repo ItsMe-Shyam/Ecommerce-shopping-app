@@ -1,0 +1,30 @@
+.review-container {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 15rem;
+    display: inline-block;
+    padding: 4rem 6rem;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+.user-profile {
+    height: 12rem;
+    width: 12rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.user-review h1 {
+    font-weight: 200;
+
+}
+.user-img {
+    height: 12rem;
+    width: 12rem;
+    clip-path: circle( 50% at 50% 50%);
+    transform: scale(1.1);
+    background-size: cover;
+}

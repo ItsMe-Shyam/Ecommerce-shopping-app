@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.466);
+  color: white;
+}
+
+
+.redColor {
+  color: red !important;
+}
+.greenColor {
+  color: rgb(63, 223, 63) !important;
+}
+
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  cursor: url("../src/images/cursor.png"), auto;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  font-family: roboto;
+}

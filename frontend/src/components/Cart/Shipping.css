@@ -1,0 +1,96 @@
+.shipping-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shipping-form {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.shipping-container > h1 {
+  margin-bottom: 4rem;
+  border-bottom: 2px solid tomato;
+  padding: 1rem 2rem;
+}
+
+.shipping-form > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.shipping-form > div > input,
+.shipping-form > div > select {
+  padding: 1rem 1rem 1rem 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+.shipping-form > div {
+  position: relative;
+  width: 100%;
+}
+
+.shipping-form > div > svg {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  color: rgb(88, 77, 77);
+}
+
+.shipping-form > button {
+  border: none;
+  color: white;
+  background-color: tomato;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.shipping-form > button:disabled {
+  cursor:not-allowed;
+  background-color: grey;
+}
+
+.shipping-form > button:hover {
+  filter: brightness(1.1);
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .shipping-form {
+      width: 35%;
+    }
+    .shipping-form > div > input,
+    .shipping-form > div > select {
+      /* padding-bottom: 2rem; */
+      font-size: 1.8rem;
+    }
+    .shipping-form > div > svg {
+        font-size: 3rem;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .shipping-form > div:not(:last-child) {
+      margin: 2.5rem 0;
+    }
+    .shipping-form {
+      width: 60%;
+    }
+    .shipping-form > div > svg {
+      top: 1.4rem;
+    }
+  }
+

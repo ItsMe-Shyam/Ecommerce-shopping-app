@@ -1,0 +1,64 @@
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    width: 22%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.payment-form > p {
+    font-size: 2.5rem;
+    border-bottom: 1px solid rgba(0,0,0,.363);
+    padding: .5rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.payment-form > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.payment-form > div > svg {
+    position: absolute;
+    left: 2rem;
+    font-size: 2rem;
+    color: rgba(0,0,0,.363)
+}
+
+.payment-input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit-button {
+    color: white;
+    padding: 1rem 4rem;
+    background-color: tomato;
+    border: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .payment-form {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .payment-form {
+        width: 50%;
+    }
+    .payment-form > div:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+}

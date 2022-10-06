@@ -1,0 +1,31 @@
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.success-container > svg {
+    color: tomato;
+    font-size: 6rem;
+}
+
+.success-container > h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+
+}
+.success-container > a > button {
+    padding: 1rem 3rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.success-container > a > button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}

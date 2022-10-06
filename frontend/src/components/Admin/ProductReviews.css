@@ -1,0 +1,49 @@
+.searchReviews {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem 2rem;
+}
+
+.searchReviewsForm {
+    margin: 4rem auto;
+    padding: 5rem;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.searchReviewsForm > h1 {
+    border-bottom: 2px solid tomato;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.searchReviewsForm > div {
+    margin: 4rem 0;
+    width: 100%;
+}
+.searchReviewsForm > div > input {
+    
+   box-sizing: border-box;
+   width: 100%;
+   padding: 1rem 2rem; 
+   padding-left: 4rem;
+}
+.searchReviewsForm > div > svg {
+    position: absolute;
+    transform: translate(1rem, 1.2rem);
+
+}
+.noReviewsHeading {
+    margin: 0 auto;
+}
+#searchReviewBtn {
+    padding: 1rem 3rem;
+    background-color: tomato;
+    color: white;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,128 @@
+.productContainer {
+    display: flex;
+    padding: 4rem 0;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 630px) {
+
+    .productContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carouselContainer {
+        margin-bottom: 6rem;
+        margin-left: 6rem;
+    }
+}
+
+.carouselContainer {
+    height: 32rem;
+    width: 23rem;
+    margin-right: 10rem;
+}
+
+.carouselImg {
+    width: 100%;
+    height: 30rem;
+}
+
+.infoContainer > * {
+    margin-bottom: 1rem;
+}
+.quantityGroup input {
+    padding: .4rem .8rem;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+.quantityGroup span {
+    /* border-radius: 50px; */
+    padding: .2rem 1rem;
+    font-size: 2rem;
+    background-color: rgba(202, 13, 13, 0.719);
+    color: white;
+
+}
+
+.addCart {
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 2rem 0;
+    border-radius: 40px;
+    background-color: rgba(202, 13, 13, 0.719);
+    color: white;
+    transition: all .2s ease;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product-price {
+    color: tomato;
+    font-size: 2.5rem;
+}
+
+.instock {
+    color: green;
+}
+.outstock {
+    color: red;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+.reviews-heading {
+    width: 50rem;
+    border-bottom: 2px solid black;
+    background: linear-gradient(to right, rgba(192, 28, 28, 0.353), rgb(192, 28, 28));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    margin: 5rem auto;
+    
+}
+
+.addReviewButton {
+    border: none;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: rgba(202, 13, 13, 0.719);
+    transition: all .2s ease;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.addReviewButton:hover {
+    background-color: rgba(202, 13, 13, 0.863);
+}
+
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.submitDialogTextarea {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    margin: 1rem 0;
+    font: 300 1rem "Roboto";
+}

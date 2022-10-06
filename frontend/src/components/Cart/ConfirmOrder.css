@@ -1,0 +1,93 @@
+.confirm-container {
+    display: flex;
+    min-height: 90vh;
+}
+
+.confirm-container > div {
+    display: flex;
+    flex-direction: column;
+}
+.confirm-container > div > *:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.confirm-info {
+    flex: 0 0 50%;
+    padding: 10rem 10rem;
+    font-size: 1.8rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.363);
+
+}
+.confirm-info > div > b {
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.confirm-info > div:last-child {
+    display: flex;
+    align-items: center;
+}
+.confirm-info > div:last-child > span {
+    margin: 0 auto 0 4rem;
+}
+.confirm-info > h1 {
+    font-size: 2.4rem;
+}
+
+.confirm-total {
+    flex: 1;
+    padding: 0 5rem;
+    align-self: center;
+
+}
+.confirm-total > h1 {
+    margin: 0 auto;
+}
+.confirm-total > div {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.confirm-total > button {
+    border: none;
+    color: white;
+    background-color: tomato;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.confirm-item-container > img {
+    height: 8rem;
+    width: 5rem;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 1050px) {
+    .confirm-total {
+        padding: 0 3rem;
+    }
+    .confirm-info {
+        padding: 10rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .confirm-container {
+        flex-direction: column;
+
+    }
+    .confirm-info {
+        padding: 5rem 10rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+        justify-self: center;
+        flex: 0 0 0;
+
+    }
+    .confirm-total {
+        padding: 3rem 8rem;
+        align-self: stretch;
+        display: flex;
+    }
+}

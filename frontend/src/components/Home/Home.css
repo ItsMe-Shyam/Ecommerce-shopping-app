@@ -1,0 +1,104 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../../images/homeImg.jpg");
+  background-size: cover;
+  margin-bottom: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  /* font-family: "Montserrat", sans-serif; */
+  color: white;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home h2 {
+  letter-spacing: 5px;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.home > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home > div > div > svg {
+  font-size: 2.5rem;
+  transform: translateX(-3.5rem);
+
+}
+
+@media (max-width: 600px) {
+  .home h2 {
+    letter-spacing: 2px;
+  }
+}
+
+.home p {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 3rem 0;
+}
+
+
+
+
+.btn, .btn:visited, .btn:link {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 1rem 4rem 1rem 2rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 5rem;
+    /* margin-top: 6rem; */
+    position: relative; }
+  
+  .btn:hover {
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.2rem); }
+    .btn:hover::after {
+      transform: scaleX(1.5) scaleY(1.5);
+      opacity: 0; }
+  
+  .btn:active, .btn:focus {
+    outline: none;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px); }
+  
+  .btn--red {
+    background-color: rgba(192, 28, 28, 0.815);
+    color: #000; }
+    .btn--red::after {
+      background-color: rgba(192, 28, 28, 0.815) }
+  
+  
+  .btn--animated {
+    animation: toButton 0.5s ease-out 0.5s;
+    animation-fill-mode: backwards; }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5rem;
+    transition: all 0.4s; }
+  

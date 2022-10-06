@@ -1,0 +1,72 @@
+.footer-logo {
+    height: 3rem;
+    width: 10rem;
+}
+.footer-logo:hover {
+    cursor: pointer;
+}
+.footer {
+    /* background: linear-gradient(to right, rgba(255, 99, 71, 0.904), white); */
+    background-color: black;    
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer > * {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+    }
+}
+
+.middle h1 {
+    color: rgb(202, 13, 13);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.middle {
+    align-self: center;
+    flex: .5;
+    text-align: center;
+}
+
+.right-side ul {
+    list-style: none;
+}
+
+.left-side {
+    text-align: center;
+}
+.left-side > * {
+    margin-bottom: 1rem;
+}
+
+.right-side {
+    text-align: center;
+}
+.right-side > * {
+    margin-bottom: 1rem;
+}
+
+.right-side ul li {
+    transition: all .2s;
+    margin-bottom: .5rem;
+}
+
+
+
+.right-side ul li:hover, .right-side ul li:active {
+    transform: scale(1.1) rotate(-4deg);
+    color: rgb(202, 13, 13);
+
+}

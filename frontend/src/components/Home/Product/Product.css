@@ -1,0 +1,41 @@
+.reactLink {
+    text-decoration: none;
+    color: black;
+}
+
+.product-container {
+    text-align: center;
+    width: 20rem;
+    /* height: auto; */
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all .3s ease;
+    overflow: hidden;
+    margin: 0 2rem;
+}
+
+
+.product-container:hover {
+    transform: scale(1.05);
+    /* outline: 2px solid rgba(0, 0, 0, 0.167); */
+}
+
+.product-container img {
+    height: 20rem;
+    width: 100%;
+}
+.details > h1 {
+    color: tomato;
+    font-size: 1.5rem;
+}
+.details > h2 {
+    font-weight: 200;
+}
+.details > * {
+    margin-bottom: .5rem;
+}
+
+.react-star {
+    display: flex;
+    justify-content: center;
+}

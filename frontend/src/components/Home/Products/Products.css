@@ -1,0 +1,26 @@
+.featured-products {
+    font-size: 3rem;
+    padding: 0 3rem;
+}
+
+.products-container {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding: 4rem 2rem;
+}
+
+
+.featured-container {
+    background: linear-gradient(to right, rgba(192, 28, 28, 0.353), rgb(192, 28, 28));
+    background-clip: text;
+  }
+  
+  .featured-container > .featured-products {
+    color: transparent;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    width: 25rem;
+  }

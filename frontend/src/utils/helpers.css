@@ -1,0 +1,15 @@
+.red-hover:hover {
+    background-color: rgba(202, 13, 13, 0.89);
+}
+
+.default-font-size {
+    font-size: 1.5rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1rem;
+}
+
+.u-text-align {
+    text-align: center;
+}

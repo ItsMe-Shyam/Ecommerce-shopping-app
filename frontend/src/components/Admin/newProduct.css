@@ -1,0 +1,107 @@
+.newProductContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(202, 186, 186); */
+    height: 100vh;
+    flex: 1;
+
+  }  
+
+  
+  .newProductForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 4rem;
+    background-color: white;
+  }
+
+  .newProductForm > * {
+    margin-bottom: 2rem;
+  }
+
+  .newProductForm > div > svg {
+    font-size: 2rem;
+    color: rgb(70, 60, 60);
+    transform: translate(2rem, 3rem);
+  }
+
+  .newProductForm > div > input, .newProductForm > div > select, .newProductForm > div > textarea {
+    padding: 1rem 2rem;
+    padding-left: 5rem;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+
+  }
+  
+  .newProductForm > img {
+    border: none;
+    padding: 1rem 4rem;
+    background-color: tomato;
+    border-radius: 10rem;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  
+  /* #createProductFormImage {
+
+    overflow-x: scroll;
+  } */
+  
+  #createProductFormImage > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+  
+  #createProductFormFile > input {
+    /* display: flex; */
+    padding: 0%;
+  }
+  
+  #createProductFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createProductFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createProductBtn {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  }
+  
+  #createProductBtn:hover {
+    background-color: rgb(179, 66, 46);
+  }
+  
+  @media (max-width: 600px) {
+
+    .createProductFormImage {
+      width: 60%;
+    }
+  }

@@ -1,0 +1,23 @@
+.loader {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 100px;
+    border-bottom: 3px solid black;
+    animation: spinner .9s linear infinite;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+
+}
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

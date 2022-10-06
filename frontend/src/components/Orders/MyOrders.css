@@ -1,0 +1,43 @@
+
+.orders-container {
+    height: 100vh;
+    padding: 0 10rem;
+}
+.orders-container  a {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+  }
+  
+  .orders-container a:hover {
+    color: tomato;
+  }
+
+#myOrdersHeading {
+    text-align: center;
+    font: 400 1.2vmax "Roboto";
+    padding: 1rem;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(44, 44, 44);
+  }
+
+.MuiDataGrid-columnHeader {
+    background-color: tomato;
+    padding: 1vmax !important;
+  }
+  
+  .MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+    font: 500 1.1vmax "Roboto" !important;
+  }
+
+  .MuiDataGrid-iconSeparator {
+    display: none !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .orders-container {
+          padding: 0;
+      }
+  }
