@@ -6,7 +6,7 @@
 }
 
 
-@media (max-width: 630px) {
+@media only screen and (max-width: 630px) {
 
     .productContainer {
         flex-direction: column;
@@ -19,8 +19,8 @@
 }
 
 .carouselContainer {
-    height: 32rem;
-    width: 23rem;
+    height: 30rem;
+    width: 25rem;
     margin-right: 10rem;
 }
 
