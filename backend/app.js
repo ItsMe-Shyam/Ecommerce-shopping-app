@@ -1,4 +1,3 @@
-const dotenv = require('dotenv');
 const express = require('express');
 const errorMiddleware = require('./middleware/error')
 const bodyParser = require('body-parser');
@@ -30,6 +29,12 @@ app.use('/api', productRouter);
 app.use('/api', userRouter);
 app.use('/api', orderRouter);
 app.use('/api', paymentRouter);
+
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+});
 
 
 //  Always I said ALWAYS put this bitch 'errorMiddlware' at the end because you suffered alot remember? always put this at the end .....
